@@ -1,0 +1,83 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(56, 69, 118);
+}
+
+.container{
+    transition:  width 0.5s;
+    margin: 20px;
+    width: 100px;
+    height: 85vh;
+    border-radius:20px;
+    background-color: aliceblue;
+}
+
+.ambuger div {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 20px;
+    margin: 6px 0;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s; /* Agrega una transición suave para un efecto más suave */
+    cursor: pointer;
+}
+.ambuger {
+    cursor: pointer;
+    padding: 20px 10px;
+    margin: 15px;
+    width: 45px;
+    transition: 0.5s;
+    display: grid;
+}
+
+.ambuger input:checked ~ label > div:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+
+.ambuger input:checked ~ label > div:nth-child(2) {
+    opacity: 0;
+}
+
+.ambuger input:checked ~ label > div:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -7px);
+}
+
+.ambuger input {
+    display: none;
+}
+
+.ambuger label > div {
+    background-color: #000;
+    height: 4px;
+    width: 45px;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+.icons{
+    padding: 40px 40px;
+    display: none;
+}
+.icons > div{ 
+    margin: 30px 0 0 0;
+    
+}
+.icons div label{
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+span{
+    margin:auto;
+}
+
+.iconsViews{
+    display: grid;
+}
+.conrainer-view{
+    transition:  width 0.5s;
+    width: 300px;
+}

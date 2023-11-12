@@ -1,0 +1,72 @@
+body{
+    background-color: slategrey;
+}
+.container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container label:hover{
+    cursor: pointer;
+}
+
+.container label{
+    transition: background-color 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01B9A0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: "" ease-in;
+}
+
+.container label div:nth-child(1){
+    width:20px;
+    height:3px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(90deg);
+}
+.container label div:nth-child(2){
+    height: 20px;
+    width: 3px;
+    background-color: aliceblue;
+    transform: rotate(90deg) translate(-1px,11px);
+}
+.container .text{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    width: 300px;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgba(53,64,76,0.6);   
+}
+.text{
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+@keyframes bajarBoton{
+    20%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(10px);
+    }
+   60%{
+        transform: translateY(20px);
+    }
+    80%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+
+
+}

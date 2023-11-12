@@ -1,0 +1,63 @@
+<style>
+label div{
+    width: 40px;
+    height: 40px;
+    background-color: yellowgreen;
+}
+</style>
+<body>
+    
+
+<input type="checkbox" name="" id="uno">
+<label for="uno"><div id="unoo"></div></label>
+
+<input type="checkbox" name="" id="dos">
+<label for="dos"><div></div></label>
+
+<input type="checkbox" name="" id="tres">
+<label for="tres"><div></div></label>
+
+<input type="checkbox" name="" id="cuatro">
+<label for="cuatro"><div></div></label>
+
+<input type="checkbox" name="" id="cinco">
+<label for="cinco"><div></div></label>
+</body>
+<script>
+var one = document.getElementById('unoo')
+var botones = document.querySelectorAll('input[type="checkbox"]');
+var checkboxesActivos = [];
+
+botones.forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        if (checkbox.checked) {
+            checkboxesActivos.push(checkbox.id);
+            console.log(checkboxesActivos+ " ACTIVO");
+            if (checkbox.id == "uno") {
+                one.style.backgroundColor = "blue"
+            }
+           
+        } else {
+            var index = checkboxesActivos.indexOf(checkbox.id);
+            console.log("index "+index+" "+checkboxesActivos );
+            if (index !== -1) {
+                //elimina un elemento que es el que esta marcado desde la posicion 1
+                checkboxesActivos.splice(index, 1);
+            }
+        }
+        
+        botones.forEach(function(otroCheckbox) {
+            if (otroCheckbox !== checkbox) {
+                otroCheckbox.checked = false;
+                if (otroCheckbox.id  =="uno") {
+                    one.style.backgroundColor = ""
+                }
+            }
+        });
+    });
+});
+
+
+
+
+</script>

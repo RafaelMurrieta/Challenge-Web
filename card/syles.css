@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen predeterminado del body */
+}
+body{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 10px 10px 60px black;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-title{
+    width: 100%;
+    margin-top: 10%;
+}
+.card-title:hover{
+    cursor:text
+}
+
+.card-body .img-body{
+    margin-top: 90px;
+    width: 60%;
+    height: 60%;
+}
+.card-size{
+    display: flex;
+}
+.card-size .title-size{
+    background: none;
+    color: white;
+}
+.card-size div{
+    background-color: white;
+    color:#5B8995;
+    padding: 0px 10px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+.card-img{
+    height: cover;
+    display: grid;
+    width: 30%;
+}
+.card-img button{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+.card img{
+    width: 90%;
+    height: 90%;
+}
+.card-img{
+    left: -400px;
+    position: absolute;
+}
+.child1{
+    margin-top: 10px;
+    left: -140px;
+  }
+
+.child2 {
+    margin-top: 30px;   
+    top: 35%;
+    left: -140px;
+  }
+  
+.child3 {
+    margin-top: 40px;
+    top: 70%;
+    left: -140px;
+  }
+
+.card-button{
+    width: 60%;
+    height: 10%;
+    position: absolute;
+    bottom: -80px;
+    right: 30px;
+}
+.card-button > button{
+    width: 80%;
+    padding: 30px;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #5B8995;
+
+}
