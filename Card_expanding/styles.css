@@ -1,0 +1,34 @@
+ body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    width: 90vw;
+    height: 80vh;
+}
+
+.cards-container{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container .card{
+    margin: 5px;
+    width:200px;
+    height: 100%;
+    transition: width 0.5s;
+}
+.cards-container .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
