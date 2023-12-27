@@ -1,0 +1,34 @@
+body{
+    background-color: #7359E6;
+    display: flex;
+    width: 99vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container .input .searchInp{
+    font-size: large;
+    width: 0px;
+    height: 30px;
+    padding: 10px;
+    border: none;    
+    outline: none;
+    transition: width 0.5s ease;
+}
+.container .search{
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    background-color: white;
+    padding: 10px;
+}
+.container .search img{
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+}
