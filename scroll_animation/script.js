@@ -7,13 +7,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let contador = 3
     // move()
 })
-
+contador = 3
 window.addEventListener('scroll',function(){
   let scrollPosition = window.scrollY;
   i = Math.round(scrollPosition)
-  if (i > 130) {
-    contador+
-    createElement(contador)
+  i = i/5
+  if (i < 100) {
+        createElement(contador)
+        // move()
+        contador+=1
   }
 })
 
