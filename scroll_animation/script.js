@@ -17,6 +17,8 @@ window.addEventListener('scroll',function(){
     createElement(contador)
     move(contador)
     contador+=1
+  }else{
+
   }
 })
 

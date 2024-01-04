@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .play{
+    background-color:#7F7DEB;
+    width: 50%;
+    height: 100%;
+}
+
+.container .xbox{
+    background-color: #2A292A;
+    width: 50%;
+    height: 100%;
+}
+
+.container div{
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.container .play .title button{
+    background-color: #7F7DEB;
+}
+
+.container .play .title button:hover{
+    border: none;
+    background-color: rgba(87, 84, 236, 1);
+}
+
+.container .xbox .title button{
+    background-color:#2A292A;
+}
+
+.container .xbox .title button:hover{
+    border: none;
+    background-color: rgba(28, 122, 28, 1);
+}
+
+.container div div button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 2rem;
+    border: 5px solid white;
+    border-radius: 5px;
+    
+}
+
+.container button{
+    margin: 100px auto;
+    width: 30%;
+    padding: 1.5rem;
+}
+
+.container div .title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: white;
+}
