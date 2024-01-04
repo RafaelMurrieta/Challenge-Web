@@ -20,21 +20,49 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    height: 100vh;
+    height: 101vh;
     width: 99vw;
+    margin-bottom: 100px;
 }
 .container .elementD span{
     color: white;
     font-weight: bold;
     font-size: 3rem;
 }
-.container .elementI span{
+
+.elementD{
+    /* transition: right 0.5s; */
+    position: relative;
+    background-color: #4682B4;
+    padding: 60px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 1px 1px 20px 1px black;
+    border-radius: 10px;
+}
+.container .zero span{
     color: white;
     font-weight: bold;
     font-size: 3rem;
 }
-.elementD{
-    /* transition: right 0.5s; */
+.container .zeroI span{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.zero{
+    transition: right 1.5s;
+    position: relative;
+    background-color: #4682B4;
+    padding: 60px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 1px 1px 20px 1px black;
+    border-radius: 10px;
+}
+.zeroI{
+    transition: left 1.5s;
     position: relative;
     background-color: #4682B4;
     padding: 60px;
